@@ -35,6 +35,6 @@
     "underscore": "^1.7.0"
   },
   "engines": {
-    "node": "4.5.0"
+    "node": "3.8.0"
   }
 }
