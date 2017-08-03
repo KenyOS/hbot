@@ -26,4 +26,3 @@ googleMe = (msg, query, cb) ->
     .query(q: query)
     .get() (err, res, body) ->
       cb body.match(/class="r"><a href="\/url\?q=([^"]*)(&amp;sa.*)">/)?[1] || "Sorry, Google had zero results for '#{query}'"
- Desktop version
