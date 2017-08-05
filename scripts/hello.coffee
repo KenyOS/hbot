@@ -41,13 +41,22 @@ whatups = [
     "bem eu acho e você %?",
     "Melhor e você %?"
 ]
+saudades= [
+    "É bom vê-lo de novo, %!!"
+    "Senti a sua falta"
+    "também o/"
+]
 module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
         hello = msg.random hellos
         msg.send hello.replace "%", msg.message.user.name
         
-    robot.hear /(^tchau lain|lain tchau)/i, (msg) ->
+    robot.hear /(^tchau lain|lain tchau|lain bye|bye lain)/i, (msg) ->
         hello = msg.random bye
+        msg.send hello.replace "%", msg.message.user.name
+        
+    robot.hear /(^saudades lain)/i, (msg) ->
+        hello = msg.random saudades
         msg.send hello.replace "%", msg.message.user.name
         
     robot.hear /(^bom dia(?! ))/i, (msg) ->
