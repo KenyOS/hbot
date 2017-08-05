@@ -20,7 +20,7 @@
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.4.2",
-    "hubot-youtube" "^1.0.2"
+    "hubot-youtube": "^1.0.2"
   },
   "engines": {
     "node": "6.11.1"
