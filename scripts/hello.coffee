@@ -46,6 +46,11 @@ saudades= [
     "Senti a sua falta"
     "também o/"
 ]
+amor= [
+    "Desculpe, mas o que é amar?"
+    "Não conheço essa definição, desculpe %"
+    "Você está bem, %?"
+]
 module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
         hello = msg.random hellos
@@ -57,6 +62,10 @@ module.exports = (robot) ->
         
     robot.hear /(^saudades lain)/i, (msg) ->
         hello = msg.random saudades
+        msg.send hello.replace "%", msg.message.user.name
+        
+    robot.hear /(^te amo lain|lain amo você|lain te amo)/i, (msg) ->
+        hello = msg.random amor
         msg.send hello.replace "%", msg.message.user.name
         
     robot.hear /(^bom dia(?! ))/i, (msg) ->
