@@ -5,8 +5,8 @@
   "author": "",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "hubot": "2.18.0",
-    "hubot-scripts": "2.16.2",
+    "hubot": "^2.18.0",
+    "hubot-scripts": "^2.16.2",
     "hubot-slack": "^3.4.2"
   },
   "engines": {
