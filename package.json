@@ -9,9 +9,6 @@
     "hubot-scripts": "2.16.2",
     "hubot-slack": "^3.4.2"
   },  
-  "scripts": {
-    "postinstall": "bower cache clean && node bower install"
-  },
   
   "engines": {
     "node": "0.10.x"
