@@ -23,10 +23,16 @@ hellos = [
     "oiii, %",
     "olá, %",
 ]
+bye = [
+    "Tchau Tchau",
+    "Te vejo depois, %!",
+    "Adeus",
+    "Até logo, %"
+]
 mornings = [
     "Bom dia, %",
     "Bom dia pra você também, %",
-    "Muito bom dia, % como vai?",
+    "Muito bom dia, % como vai?"
 ]
 whatups = [
     "bem e você %?",
@@ -39,7 +45,11 @@ module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
         hello = msg.random hellos
         msg.send hello.replace "%", msg.message.user.name
-
+        
+    robot.hear /(^tchau lain|lain tchau)/i, (msg) ->
+        hello = msg.random bye
+        msg.send hello.replace "%", msg.message.user.name
+        
     robot.hear /(^bom dia(?! ))/i, (msg) ->
         hello = msg.random mornings
         msg.send hello.replace "%", msg.message.user.name
