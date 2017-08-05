@@ -6,10 +6,7 @@
   "description": "A simple helpful robot for your Company",
   "dependencies": {
     "hubot": "2.18.0",
-    "hubot-google-images": "^0.2.6",
-    "hubot-motivate": "^3.0.0",
-    "hubot-pugme": "^0.1.0",
-    "hubot-scripts": "^2.16.2",
+    "hubot-scripts": "2.16.2",
     "hubot-slack": "^3.4.2"
   },
   "engines": {
