@@ -24,7 +24,7 @@
     "hubot-search": "^0.1.2",
     "hubot-kitsu": "^0.0.5",
     "hubot-youtube": "^1.0.2",
-    "hubot-sushiyuki": "^0.0.2"
+    "hubot-sushiyuki": "^0.0.2",
     "hubot-seen": "^1.0.1"
   },
   "engines": {
