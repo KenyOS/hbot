@@ -41,6 +41,10 @@ whatups = [
     "bem eu acho e você %?",
     "Melhor e você %?"
 ]
+noite = [
+    "Boa noite, %",
+    "Boa noite pra você também, %"
+]
 saudades= [
     "É bom vê-lo de novo, %!!"
     "Senti a sua falta"
@@ -108,5 +112,9 @@ module.exports = (robot) ->
     
     robot.hear /Lain, quantos anos você tem?/i, (msg) ->
         hello = msg.random idade
+        msg.send hello.replace "%", msg.message.user.name
+        
+     robot.hear /boa noite lain|boa noite, lain/i, (msg) ->
+        hello = msg.random noite
         msg.send hello.replace "%", msg.message.user.name
     
