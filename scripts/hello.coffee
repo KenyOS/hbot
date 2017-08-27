@@ -32,7 +32,7 @@ bye = [
 mornings = [
     "Bom dia, %",
     "Bom dia pra você também, %",
-    "Muito bom dia, % como vai?"
+    "Muito bom dia, %"
 ]
 whatups = [
     "bem e você %?",
@@ -57,6 +57,11 @@ ofensa= [
     "..."
     "Eu.. tento fazer o meu melhor, %"
 ]
+elogio= [
+    "Obrigada, % (๑>◡<๑)"
+    "⚈້͈͡ ·̼̮ ⚈້͈͡"
+    "TeeHee (≧ڡ≦*)"
+]
 module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
         hello = msg.random hellos
@@ -74,7 +79,7 @@ module.exports = (robot) ->
         hello = msg.random amor
         msg.send hello.replace "%", msg.message.user.name
         
-    robot.hear /(^bom dia lain|bom dia, lain)/i, (msg) ->
+    robot.hear /(^bom dia lain|bom dia, lain|bom dia @lain)/i, (msg) ->
         hello = msg.random mornings
         msg.send hello.replace "%", msg.message.user.name
         
@@ -93,4 +98,9 @@ module.exports = (robot) ->
     robot.hear /lain é re\.+|lain é re\w+/i, (msg) ->
         hello = msg.random ofensa
         msg.send hello.replace "%", msg.message.user.name
+        
+    robot.hear /lain você é fofa|lain você é inteligente|lain você é meiga/i, (msg) ->
+        hello = msg.random elogio
+        msg.send hello.replace "%", msg.message.user.name
+       
     
