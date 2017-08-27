@@ -51,6 +51,12 @@ amor= [
     "Não conheço essa definição, desculpe %"
     "Você está bem, %?"
 ]
+ofensa= [
+    "Por que você está me ofendendo assim, %"
+    "=("
+    "..."
+    "Eu.. tento fazer o meu melhor, %"
+]
 module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
         hello = msg.random hellos
@@ -83,3 +89,8 @@ module.exports = (robot) ->
     robot.hear /(^ipi ipi)/i, (msg) ->
         hello = msg.random lainipi
         msg.send hello.replace "%", msg.message.user.name
+        
+    robot.hear /lain é re\.+|lain é re\w+/i, (msg) ->
+        hello = msg.random ofensa
+        msg.send hello.replace "%", msg.message.user.name
+    
