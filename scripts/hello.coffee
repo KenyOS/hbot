@@ -63,7 +63,7 @@ elogio= [
     "TeeHee (≧ڡ≦*)"
 ]
 idade= [
-    "Conceito de tempo de vida, não se aplica a mim, %. Mas já tive 14 anos há algum momento.. ◉‿◉"
+    "Conceito de tempo de vida não se aplica a mim, %. Mas já tive 14 anos há algum momento.. ◉‿◉"
 ]
 module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
