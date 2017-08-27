@@ -82,7 +82,7 @@ module.exports = (robot) ->
         hello = msg.random saudades
         msg.send hello.replace "%", msg.message.user.name
         
-    robot.hear /(^te amo lain|lain amo você|lain te amo)/i, (msg) ->
+    robot.hear /(^te amo lain|lain amo você|lain te amo|amo voc.+ lain)/i, (msg) ->
         hello = msg.random amor
         msg.send hello.replace "%", msg.message.user.name
         
