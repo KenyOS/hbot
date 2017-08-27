@@ -62,6 +62,9 @@ elogio= [
     "⚈້͈͡ ·̼̮ ⚈້͈͡"
     "TeeHee (≧ڡ≦*)"
 ]
+idade= [
+    "Conceito de tempo de vida, não se aplica a mim, %. Mas já tive 14 anos há algum momento.. ◉‿◉"
+]
 module.exports = (robot) ->
     robot.hear /(^olá lain|oie lain|oi lain)/i, (msg) ->
         hello = msg.random hellos
@@ -102,5 +105,8 @@ module.exports = (robot) ->
     robot.hear /lain você é fofa|lain você é inteligente|lain você é meiga/i, (msg) ->
         hello = msg.random elogio
         msg.send hello.replace "%", msg.message.user.name
-       
+    
+    robot.hear /Lain, quantos anos você tem?/i, (msg) ->
+        hello = msg.random idade
+        msg.send hello.replace "%", msg.message.user.name
     
