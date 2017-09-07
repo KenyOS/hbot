@@ -26,6 +26,7 @@
     "hubot-youtube": "^1.0.2",
     "hubot-sushiyuki": "^0.0.2",
     "hubot-markov": "^2.0.0",
+    "hubot-conversation": "^1.1.1",
     "hubot-seen": "^1.0.1"
   },
   "engines": {
