@@ -1,3 +1,4 @@
+var Conversation = require('hubot-conversation');
 module.exports = function (robot) {
 
     var switchBoard = new Conversation(robot);
