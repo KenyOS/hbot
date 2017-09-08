@@ -14,7 +14,7 @@
 #   pescuma
 
 module.exports = (robot) ->
-  robot.eatListeners = {}
+  robot.eatListeners = {white}
 
   # Public: Adds a Listener that receives the next message from the user and av
   # further processing of it.
