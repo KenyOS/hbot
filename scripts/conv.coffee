@@ -10,4 +10,3 @@ robot.hear(/delete all the files/, function(msg) {
     dialog.addChoice( /no/, function(msg2){/*Do some stuff for the no option*/ }
  
     //The dialog will expire after 30 secods.   
-});
