@@ -35,7 +35,7 @@
   },
     "devDependencies": {
     "load-grunt-tasks": "^3.3.0",
-    "pre-commit": "^1.1.1"
+    "pre-commit": "^1.1.1",
     "chai": "^3.3.0",
     "coffee-coverage": "~1.0.1",
     "coffee-script": "~1.7.1",
